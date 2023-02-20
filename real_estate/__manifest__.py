@@ -10,7 +10,7 @@
     'data': [
 
         'views/real_estate.xml',
-        'data/country_states.csv',
+        'data/res.country.state.csv',
         'security/ir.model.access.csv',
     ],
 
