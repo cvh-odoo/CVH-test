@@ -4,7 +4,7 @@ class RealEstate(models.Model):
     _name = "real.estate"
     _date = "It's the model that defines what a house is"
 
-    name = fields.Char(required=True)
+    name = fields.Char(required=True,index=True)
     description = fields.Text()
     postcode = fields.Char()
     date_availibility = fields.Date()
