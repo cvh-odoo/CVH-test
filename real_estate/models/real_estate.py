@@ -4,11 +4,11 @@ class RealEstate(models.Model):
     _name = "real.estate"
     _date = "It's the model that defines what a house is"
 
-    name = fields.Char()
+    name = fields.Char(required=True)
     description = fields.Text()
     postcode = fields.Char()
     date_availibility = fields.Date()
-    expected_price = fields.Float()
+    expected_price = fields.Float(required=True)
     selling_price = fields.Float()
     bedrooms = fields.Integer()
     living_area = fields.Integer()
