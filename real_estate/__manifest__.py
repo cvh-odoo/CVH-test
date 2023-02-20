@@ -10,6 +10,7 @@
     'data': [
 
         'views/real_estate.xml',
+        'security/country_states.csv',
     ],
 
     'installable': True,
