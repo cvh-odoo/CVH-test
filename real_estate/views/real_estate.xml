@@ -4,4 +4,5 @@
 	<field name="res_model">real.estate</field>
 	<field name="view_mode">tree,form</field>
 </record>
+<menuitem id="real_estate_menu_action" action="real_estate_action"/>
 </data>
