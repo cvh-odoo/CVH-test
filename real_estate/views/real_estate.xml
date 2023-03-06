@@ -1,8 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-<record id="real_estate_action" model="ir.actions.act_window">
-	<field name="name">Real Estate Action</field>
-	<field name="res_model">real.estate</field>
-	<field name="view_mode">tree,form</field>
-</record>
-<menuitem id="real_estate_menu_action" action="real_estate_action"/>
+	<data>
+		<record id="real_estate_action" model="ir.actions.act_window">
+			<field name="name">Real Estate Action</field>
+			<field name="res_model">real.estate</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem id="real_estate_menu_action" action="real_estate_action"/>
+	</data>
 </odoo>
