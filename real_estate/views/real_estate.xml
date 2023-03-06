@@ -3,4 +3,5 @@
 	<field name="name">Real Estate Action</field>
 	<field name="res_model">real.estate</field>
 	<field name="view_mode>tree,form</field>
+</record>
 </data>
