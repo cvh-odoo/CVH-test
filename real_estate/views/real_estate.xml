@@ -5,20 +5,22 @@
 			<field name="name">Real Estate Action</field>
 			<field name="res_model">real.estate</field>
 			<field name="view_mode">tree,form</field>
+			<field name="arch" type="xml">
+				<tree string="Properties">
+					<field name="Title"/>
+					<field postcode="Postcode"/>
+					<field bedrooms="Bedrooms"/>
+					<field living_area="Living Area (sqm)"/>
+					<field expected_price="Expected Price"/>
+					<field selling_price="Price"/>
+					<field date_availibility="Available from"/>
+				</tree>
+			</field>
 		</record>
 		<menuitem id="real_estate_root_menu" name="Real Estate Root">
 			<menuitem id="real_estate_first_level_menu" name="Real Estate First Level">
 				<menuitem id="real_estate_menu_action" action="real_estate_action"/>
 			</menuitem>
 		</menuitem>
-		<tree string="Properties">
-			<field name="Title"/>
-			<field postcode="Postcode"/>
-			<field bedrooms="Bedrooms"/>
-			<field living_area="Living Area (sqm)"/>
-			<field expected_price="Expected Price"/>
-			<field selling_price="Price"/>
-			<field date_availibility="Available from"/>
-		</tree>
 	</data>
 </odoo>
