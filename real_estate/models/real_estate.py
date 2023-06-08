@@ -8,7 +8,7 @@ class RealEstate(models.Model):
     name = fields.Char("Title",required=True,index=True)
     description = fields.Text("Description")
     postcode = fields.Char("Postcode")
-    date_availibility = fields.Date("Available from",copy=False,default=lambda self: fields.Date.context_today()+relativedelta(months=3))
+    date_availibility = fields.Date("Available from",copy=False,default=lambda self: fields.Date.context_today(self)+relativedelta(months=3))
     expected_price = fields.Float("Expected price",required=True)
     selling_price = fields.Float("Price",readonly=True,copy=False)
     bedrooms = fields.Integer("Bedrooms",default="2")
