@@ -63,6 +63,16 @@
 				</form>
 			</field>
 		</record>	
+		<record id="real_estate_search_view" model="ir.ui.view">
+			<field name="name">real.estate.search</field>
+			<field name="model">real.estate</field>
+			<field name="arch" type="xml">
+				<search string="Properties">
+					<field name="name" string="Title"/>
+					<filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+				</search>
+			</field>
+		</record>		
 		<menuitem id="real_estate_root_menu" name="Real Estate Root">
 			<menuitem id="real_estate_first_level_menu" name="Real Estate First Level">
 				<menuitem id="real_estate_menu_action" action="real_estate_action"/>
