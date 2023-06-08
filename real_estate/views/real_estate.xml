@@ -35,6 +35,8 @@
 								<field name="active" invisible="1"/>
 							</div>
 							<group>
+							</group>
+							<group>
 								<field name="postcode"/>
 								<field name="date_availibility"/>
 							</group>
