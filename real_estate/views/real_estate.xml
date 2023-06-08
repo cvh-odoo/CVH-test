@@ -29,9 +29,6 @@
 					<sheet>
 						<group>
 							<div class="oe_title">
-								<div class="oe_edit_only">
-									<label for="name"/>
-								</div>
 								<h1 class="mb32">
 									<field name="name" class="mb16"/>
 								</h1>
