@@ -5,15 +5,19 @@
 			<field name="name">Real Estate Action</field>
 			<field name="res_model">real.estate</field>
 			<field name="view_mode">tree,form</field>
+		</record>
+		<record id="real_estate_tree_view" model="ir.ui.view">
+			<field name="name">real.estate.tree</field>
+			<field name="model">real.estate</field>
 			<field name="arch" type="xml">
 				<tree string="Properties">
-					<field name="Title"/>
-					<field postcode="Postcode"/>
-					<field bedrooms="Bedrooms"/>
-					<field living_area="Living Area (sqm)"/>
-					<field expected_price="Expected Price"/>
-					<field selling_price="Price"/>
-					<field date_availibility="Available from"/>
+					<field name="name"/>
+					<field name="postcode"/>
+					<field name="bedrooms"/>
+					<field name="living_area"/>
+					<field name="expected_price"/>
+					<field name="selling_price"/>
+					<field name="date_availibility"/>
 				</tree>
 			</field>
 		</record>
