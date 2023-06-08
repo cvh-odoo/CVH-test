@@ -21,6 +21,36 @@
 				</tree>
 			</field>
 		</record>
+		<record id="real_estate_form_view" model="ir.ui.view">
+			<field name="name">real.estate.form</field>
+			<field name="model">real.estate</field>
+			<field name="arch" type="xml">
+				<form string="Properties">
+					<sheet>
+						<group>
+							<group>
+								<field name="postcode"/>
+								<field name="date_availibility"/>
+								<field name="expected_price"/>
+								<field name="selling_price"/>
+							</group>
+							<notebook>
+								<page string="Description">
+									<field name="description"/>
+									<field name="bedrooms"/>
+									<field name="living_area"/>
+									<field name="facades"/>
+									<field name="garage"/>
+									<field name="garden"/>
+									<field name="garden_area"/>
+									<field name="garden_orientation"/>
+								</page>
+							</notebook>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>	
 		<menuitem id="real_estate_root_menu" name="Real Estate Root">
 			<menuitem id="real_estate_first_level_menu" name="Real Estate First Level">
 				<menuitem id="real_estate_menu_action" action="real_estate_action"/>
