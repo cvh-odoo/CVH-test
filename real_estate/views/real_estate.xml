@@ -11,5 +11,14 @@
 				<menuitem id="real_estate_menu_action" action="real_estate_action"/>
 			</menuitem>
 		</menuitem>
+		<tree string="Properties">
+			<field name="Title"/>
+			<field postcode="Postcode"/>
+			<field bedrooms="Bedrooms"/>
+			<field living_area="Living Area (sqm)"/>
+			<field expected_price="Expected Price"/>
+			<field selling_price="Price"/>
+			<field date_availibility="Available from"/>
+		</tree>
 	</data>
 </odoo>
