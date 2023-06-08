@@ -74,7 +74,7 @@
 					<field name="bedrooms"/>
 					<field name="living_area"/>
 					<field name="facades"/>
-					<filter string="Available" name="date_availability" domain=[('date_availability','>=',current_date)]"/>
+					<filter string="Available" name="date_availability" domain="[('date_availability','>=',current_date)]"/>
 					<separator/>
 					<filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
 				</search>
