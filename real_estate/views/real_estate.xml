@@ -88,6 +88,7 @@
 		<menuitem id="real_estate_root_menu" name="Real Estate Root">
 			<menuitem id="real_estate_first_level_menu" name="Real Estate First Level">
 				<menuitem id="real_estate_menu_action" action="real_estate_action"/>
+			</menuitem>
 		</menuitem>
 	</data>
 </odoo>
