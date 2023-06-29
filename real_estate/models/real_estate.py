@@ -20,3 +20,5 @@ class RealEstate(models.Model):
     garden_orientation = fields.Selection(string='Type', selection=[('north','North'), ('south','South'), ('east','East'), ('west','West')], help="Choose your garden orientation")
     active = fields.Boolean("Active", default=True)
     state = fields.Selection(string='Status', selection=[('new','New'), ('offer received','Offer Received'), ('offer accepted','Offer Accepted'), ('sold','Sold'), ('canceled','Canceled')], default='new', required=True, copy=False)
+    partner_id = fields.Many2one("res.partner",string="Buyer")
+    res.users_id = fields.Many2one("res.users",string="Salesperson")
