@@ -57,8 +57,6 @@
 										<field name="garden_orientation"/>
 									</group>
 								</page>
-							</notebook>
-							<notebook>
 								<page string="Other info">
 									<group>
 										<field name="partner_id"/>
