@@ -37,7 +37,7 @@
 							<group>
 							</group>
 							<group>
-								<field name="tags_ids"/>
+								<field name="tags_ids" widget="many2many_tags"/>
 							</group>
 							<group>
 							</group>
