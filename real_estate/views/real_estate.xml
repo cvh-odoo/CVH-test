@@ -27,21 +27,17 @@
 			<field name="arch" type="xml">
 				<form string="Properties">
 					<sheet>
-						<group>
 							<div class="oe_title">
-								<h1 class="mb32">
-									<field name="name" class="mb16"/>
-								</h1>
-								<field name="active" invisible="1"/>
+
+               							<label for="name" string="Name"/>
+                						<h1>
+                    							<div class="d-flex">
+                        							<field class="text-break" name="name" placeholder="e.g. Cheese Burger"/>
+                    							</div>
+                						</h1>
+							<field name="tags_ids" widget="many2many_tags"/> 
+							<field name="active" invisible="1"/>
 							</div>
-						</group>
-						<group>
-								<group>
-									<field name="tags_ids" widget="many2many_tags" nolabel="1"/> 
-								</group>
-								<group>
-								</group>
-						</group>
 						<group>
 							<group>
 								<field name="postcode"/>
@@ -52,26 +48,27 @@
 								<field name="selling_price"/>
 							</group>
 						</group>
-							<notebook>
-								<page string="Description">
-									<group>
-										<field name="description"/>
-										<field name="bedrooms"/>
-										<field name="living_area"/>
-										<field name="facades"/>
-										<field name="garage"/>
-										<field name="garden"/>
-										<field name="garden_area"/>
-										<field name="garden_orientation"/>
-									</group>
-								</page>
-								<page string="Other info">
-									<group>
-										<field name="partner_id"/>
-										<field name="users_id"/>
-									</group>
-								</page>
-							</notebook>
+						
+						<notebook>
+							<page string="Description">
+								<group>
+									<field name="description"/>
+									<field name="bedrooms"/>
+									<field name="living_area"/>
+									<field name="facades"/>
+									<field name="garage"/>
+									<field name="garden"/>
+									<field name="garden_area"/>
+									<field name="garden_orientation"/>
+								</group>
+							</page>
+							<page string="Other info">
+								<group>
+									<field name="partner_id"/>
+									<field name="users_id"/>
+								</group>
+							</page>
+						</notebook>
 						
 					</sheet>
 				</form>
