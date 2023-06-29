@@ -34,13 +34,15 @@
 								</h1>
 								<field name="active" invisible="1"/>
 							</div>
-							<group>
-							</group>
-							<group>
-								<field name="tags_ids" widget="many2many_tags" nolabel="1"/> 
-							</group>
-							<group>
-							</group>
+						</group>
+						<group>
+								<group>
+									<field name="tags_ids" widget="many2many_tags" nolabel="1"/> 
+								</group>
+								<group>
+								</group>
+						</group>
+						<group>
 							<group>
 								<field name="postcode"/>
 								<field name="date_availibility"/>
@@ -49,6 +51,7 @@
 								<field name="expected_price"/>
 								<field name="selling_price"/>
 							</group>
+						</group>
 							<notebook>
 								<page string="Description">
 									<group>
@@ -69,7 +72,7 @@
 									</group>
 								</page>
 							</notebook>
-						</group>
+						
 					</sheet>
 				</form>
 			</field>
