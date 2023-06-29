@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id="real_estate_action" model="ir.actions.act_window">
+			<field name="name">Real Estate Action</field>
+			<field name="res_model">real.estate</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<record id="real_estate_tree_view" model="ir.ui.view">
+			<field name="name">real.estate.tree</field>
+			<field name="model">real.estate</field>
+			<field name="arch" type="xml">
+				<tree string="Properties">
+					<field name="name"/>
+					<field name="postcode"/>
+					<field name="bedrooms"/>
+					<field name="living_area"/>
+					<field name="expected_price"/>
+					<field name="selling_price"/>
+					<field name="date_availibility"/>
+				</tree>
+			</field>
+		</record>
+		<record id="real_estate_form_view" model="ir.ui.view">
+			<field name="name">real.estate.form</field>
+			<field name="model">real.estate</field>
+			<field name="arch" type="xml">
+				<form string="Properties">
+					<sheet>
+						<group>
+							<div class="oe_title">
+								<h1 class="mb32">
+									<field name="name" class="mb16"/>
+								</h1>
+								<field name="active" invisible="1"/>
+							</div>
+							<group>
+							</group>
+							<group>
+								<field name="postcode"/>
+								<field name="date_availibility"/>
+							</group>
+							<group>
+								<field name="expected_price"/>
+								<field name="selling_price"/>
+							</group>
+							<notebook>
+								<page string="Description">
+									<group>
+										<field name="description"/>
+										<field name="bedrooms"/>
+										<field name="living_area"/>
+										<field name="facades"/>
+										<field name="garage"/>
+										<field name="garden"/>
+										<field name="garden_area"/>
+										<field name="garden_orientation"/>
+									</group>
+								</page>
+							</notebook>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>	
+		<record id="real_estate_search_view" model="ir.ui.view">
+			<field name="name">real.estate.search</field>
+			<field name="model">real.estate</field>
+			<field name="arch" type="xml">
+				<search string="Properties">
+					<field name="name" string="Title"/>
+					<field name="postcode"/>
+					<field name="expected_price"/>
+					<field name="bedrooms"/>
+					<field name="living_area"/>
+					<field name="facades"/>
+					<separator/>
+					<filter string="Available" name="date_availibility" domain="[('date_availibility','&lt;=',current_date)]"/>
+					<separator/>
+					<filter string="Archived" name="inactive" domain="[('active','=', False)]"/>
+					<group expand="1" string="Group By">
+						<filter string="Postcode" name="postcode" context="{'group_by':'postcode'}"/>
+					</group>
+				</search>
+			</field>
+		</record>
+			
+		<menuitem id="real_estate_root_menu" name="Real Estate Root">
+			<menuitem id="real_estate_first_level_menu" name="Real Estate First Level">
+				<menuitem id="real_estate_menu_action" action="real_estate_action"/>
+			</menuitem>
+		</menuitem>
+	</data>
+</odoo>
