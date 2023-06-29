@@ -11,6 +11,7 @@
 
         'views/real_estate.xml',
 	'views/real_estate_type.xml',
+	'views/real_estate_tags.xml',
         'data/res.country.state.csv',
         'security/ir.model.access.csv',
     ],
