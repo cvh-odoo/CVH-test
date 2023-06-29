@@ -109,7 +109,6 @@
 								<h1 class="mb32">
 									<field name="name" class="mb16"/>
 								</h1>
-								<field name="active" invisible="1"/>
 							</div>
 							<group>
 							</group>
