@@ -40,7 +40,7 @@
 								<field name="tags_ids"/>
 							</group>
 							<group>
-							</groups>
+							</group>
 							<group>
 								<field name="postcode"/>
 								<field name="date_availibility"/>
