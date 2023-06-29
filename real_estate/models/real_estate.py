@@ -22,3 +22,4 @@ class RealEstate(models.Model):
     state = fields.Selection(string='Status', selection=[('new','New'), ('offer received','Offer Received'), ('offer accepted','Offer Accepted'), ('sold','Sold'), ('canceled','Canceled')], default='new', required=True, copy=False)
     partner_id = fields.Many2one("res.partner",string="Buyer")
     users_id = fields.Many2one("res.users",string="Salesperson")
+    tags_ids = fields.Many2many("estate.property.tags",string="Tags")

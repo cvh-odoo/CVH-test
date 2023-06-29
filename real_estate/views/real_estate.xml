@@ -37,6 +37,11 @@
 							<group>
 							</group>
 							<group>
+								<field name="tags_ids"/>
+							</group>
+							<group>
+							</groups>
+							<group>
 								<field name="postcode"/>
 								<field name="date_availibility"/>
 							</group>
