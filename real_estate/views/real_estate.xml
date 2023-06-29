@@ -55,8 +55,8 @@
 										<field name="garden"/>
 										<field name="garden_area"/>
 										<field name="garden_orientation"/>
-										<field name="res.partner_id"/>
-										<field name="res.users_id"/>
+										<field name="partner_id"/>
+										<field name="users_id"/>
 									</group>
 								</page>
 							</notebook>
