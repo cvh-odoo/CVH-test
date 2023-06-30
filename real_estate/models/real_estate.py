@@ -23,3 +23,4 @@ class RealEstate(models.Model):
     partner_id = fields.Many2one("res.partner",string="Buyer")
     users_id = fields.Many2one("res.users",string="Salesperson")
     tags_ids = fields.Many2many("estate.property.tags",string="Tags")
+    offer_lines = fields.One2many("estate.property.offer.line", "offer_id", string="Offer Lines")
